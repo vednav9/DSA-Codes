@@ -2,13 +2,13 @@
  * This interface is provided by the problem and is not given in the code. 
  * It represents the MountainArray object.
  * You can assume it has the following methods:
- * int get(int index) - Returns the element of the mountain array at index.
+ * int get(int index) - Returns the element of the mountain array at index.\
  * int length() - Returns the length of the mountain array.
  */
 
 
  class binary_1095 {
-    /*public int findInMountainArray(int target, int mountainArr) {
+    /*static int findInMountainArray(int target, int mountainArr) {
         // Step 1: Find the peak index in the mountain array
         int peakIndex = findPeakIndex(mountainArr);
         
@@ -28,7 +28,7 @@
     }
     
     // Helper function to find the peak index in the mountain array
-    private int findPeakIndex(MountainArray mountainArr) {
+    static int findPeakIndex(MountainArray mountainArr) {
         int left = 0;
         int right = mountainArr.length() - 1;
         
@@ -50,7 +50,7 @@
     }
     
     // Helper function for binary search on the ascending part of the mountain
-    private int binarySearchAscending(MountainArray mountainArr, int target, int left, int right) {
+    static int binarySearchAscending(MountainArray mountainArr, int target, int left, int right) {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             int midValue = mountainArr.get(mid);
@@ -72,7 +72,7 @@
     }
     
     // Helper function for binary search on the descending part of the mountain
-    private int binarySearchDescending(MountainArray mountainArr, int target, int left, int right) {
+    static int binarySearchDescending(MountainArray mountainArr, int target, int left, int right) {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             int midValue = mountainArr.get(mid);

@@ -5,24 +5,24 @@ class binary_33 {
         int num=search(arr,target);
         System.out.println(num);
     }
-    static int search(int[] nums, int target) {
+    static int search(int[] arr, int target) {
         int start=0;
-        int end=nums.length-1;
+        int end=arr.length-1;
         while(start<=end){
             int mid=start+(end-start)/2;
-            if(nums[mid]==target){
+            if(arr[mid]==target){
                 return mid;
             }
-            if(nums[start]<=nums[mid]){
-                if(nums[start]<=target&& target<nums[mid]){
+            if(arr[start]<=arr[mid]){   // {5,6,7,8,9,1,2}
+                if(arr[start]<=target&& target<arr[mid]){
                     end=mid-1;
                 }
                 else{
                     start=mid+1;
                 }
             }
-            else{
-                if(nums[mid]<target&&target<=nums[end]){
+            else{   // {10,12,2,4,5,7,8,9}
+                if(arr[mid]<target&&target<=arr[end]){
                     start=mid+1;
                 }
                 else{
