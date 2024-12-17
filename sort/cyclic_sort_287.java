@@ -2,9 +2,9 @@ import java.util.*;
 //Microsoft, Amazon
 public class cyclic_sort_287 {
     public static void main(String[] args) {
-        int[] arr = {5, 4, 3, 2, 1};
-        findDuplicate(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] arr = {1, 4, 3, 2, 2};
+        
+        System.out.println(findDuplicate(arr));
     }
 
     static int findDuplicate(int[] arr) {

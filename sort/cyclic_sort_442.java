@@ -5,9 +5,13 @@ import java.util.List;
 public class cyclic_sort_442 {
     public static void main(String[] args) {
         // findDuplicates(arr);
+        int[] nums = { 4,3,2,7,8,2,3,1};
+        List<Integer> missingNumbers = findDuplicates(nums);
+
+        System.out.println("Missing numbers: " + missingNumbers);
     }
 
-    public List<Integer> findDuplicates(int[] arr) {
+    static List<Integer> findDuplicates(int[] arr) {
         int i = 0;
         while (i < arr.length) {
             int correct = arr[i]-1;

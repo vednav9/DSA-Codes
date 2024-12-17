@@ -2,26 +2,30 @@ import java.util.*;
 //Amazon
 public class cyclic_sort_268 {
     public static void main(String[] args) {
-        int[] arr = {0,1};
-        sort(arr);
-        int missing=sort(arr);
-        System.out.println(missing);
+        int[] arr = {4, 0, 2, 1};
+        System.out.println(missingNumber(arr));
     }
 
-    static int sort(int[] arr) {
-        int i=0;
-        while(i<arr.length){
-            //int correct_index=arr[i];
-            if(arr[i]!=i)
-            {
-                swap(arr, i, arr[i]);
-            }
-            else{
+    public static int missingNumber(int[] arr) {
+        int i = 0;
+        while (i < arr.length) {
+            //int correct = arr[i];
+            if (arr[i] < arr.length && arr[i] != i) {
+                swap(arr, i , arr[i]);
+            } else {
                 i++;
             }
         }
 
-        return i;
+        // search for first missing number
+        for (int index = 0; index < arr.length; index++) {
+            if (arr[index] != index) {
+                return index;
+            }
+        }
+
+        // case 2
+        return arr.length;
     }
 
     static void swap(int[] arr, int first, int second) {
