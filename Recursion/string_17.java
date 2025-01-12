@@ -19,29 +19,29 @@ public class string_17 {
         System.out.println(letterCombinations("2"));
     }
 
-    static void phone(String p, String up){
+    static void phone(String p, String up) {
         if (up.isEmpty()) {
             System.out.println(p);
             return;
         }
-        int digit = up.charAt(0) -'0';
-        for (int i = (digit-1)*3; i < digit*3; i++) {
-            char ch=(char) ('a'+i);
-            phone(p+ch, up.substring(1));
+        int digit = up.charAt(0) - '0';
+        for (int i = (digit - 1) * 3; i < digit * 3; i++) {
+            char ch = (char) ('a' + i);
+            phone(p + ch, up.substring(1));
         }
     }
 
-    static ArrayList<String> phoneArrayList(String p, String up){
+    static ArrayList<String> phoneArrayList(String p, String up) {
         if (up.isEmpty()) {
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
             return list;
         }
-        int digit = up.charAt(0) -'0';
-        ArrayList<String> list=new ArrayList<>();
-        for (int i = (digit-1)*3; i < digit*3; i++) {
-            char ch=(char) ('a'+i);
-            list.addAll(phoneArrayList(p+ch, up.substring(1)));
+        int digit = up.charAt(0) - '0';
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = (digit - 1) * 3; i < digit * 3; i++) {
+            char ch = (char) ('a' + i);
+            list.addAll(phoneArrayList(p + ch, up.substring(1)));
         }
 
         return list;
@@ -60,37 +60,36 @@ public class string_17 {
         return count;
     }
 
-    
-
     // Leetcode
 
     static List<String> letterCombinations(String digits) {
-        if(digits.isEmpty()){
-            List<String> list= new ArrayList<>();
+        if (digits.isEmpty()) {
+            List<String> list = new ArrayList<>();
             return list;
         }
-        List<String> list = ans(digits,"");
+        List<String> list = ans(digits, "");
         return list;
     }
+
     static List<String> ans(String digits, String p) {
         if (digits.isEmpty()) {
-            List<String> list= new ArrayList<>();
+            List<String> list = new ArrayList<>();
             list.add(p);
             return list;
         }
-        int digit = digits.charAt(0) -'0';
-        int  i=(digit-2)*3;
-        if (digit>7) {
-            i+=1; // Beacuse 7 is 4 digit and we want for 8,9
+        int digit = digits.charAt(0) - '0';
+        int i = (digit - 2) * 3;
+        if (digit > 7) {
+            i += 1; // Beacuse 7 is 4 digit and we want for 8,9
         }
-        int len =i+3;
-        if (digit==7||digit==9) {
-            len+=1;
+        int len = i + 3;
+        if (digit == 7 || digit == 9) {
+            len += 1;
         }
-        List<String> list=new ArrayList<>();
-        for (int j=i; j < len; j++) {
-            char ch=(char) ('a'+j);
-            list.addAll(ans(digits.substring(1),p+ch));
+        List<String> list = new ArrayList<>();
+        for (int j = i; j < len; j++) {
+            char ch = (char) ('a' + j);
+            list.addAll(ans(digits.substring(1), p + ch));
         }
 
         return list;
