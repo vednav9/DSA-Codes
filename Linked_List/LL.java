@@ -291,7 +291,4 @@ class LL {
         list.display();
 
     }
-
-
-
 }

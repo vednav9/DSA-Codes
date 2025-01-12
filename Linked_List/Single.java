@@ -5,9 +5,10 @@ class Single {
     Node head;
     private int size;
 
-    Single(){
-        this.size=0;
+    Single() {
+        this.size = 0;
     }
+
     class Node {
         String data;
         Node next;
@@ -48,7 +49,7 @@ class Single {
     // print
 
     public void printList() {
-        if (head == null){
+        if (head == null) {
             System.out.println("list is empty");
             return;
         }
@@ -64,40 +65,40 @@ class Single {
 
     // delete first
 
-    public void deleteFirst(){
-        if (head==null) {
+    public void deleteFirst() {
+        if (head == null) {
             System.out.println("This list is empty");
         }
-        
+
         size--;
-        head= head.next;
+        head = head.next;
     }
 
     // delete last
 
-    public void deleteLast(){
-        if (head==null) {
+    public void deleteLast() {
+        if (head == null) {
             System.out.println("This list is empty");
         }
         size--;
 
-        if(head.next==null){
-            head=null;
+        if (head.next == null) {
+            head = null;
             return;
         }
 
-        Node secondLast=head;
-        Node lastNode= head.next;
-        while (lastNode.next!=null) {
-            lastNode=lastNode.next;
-            secondLast=secondLast.next;
+        Node secondLast = head;
+        Node lastNode = head.next;
+        while (lastNode.next != null) {
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
         }
 
-        secondLast.next=null;
+        secondLast.next = null;
 
     }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 

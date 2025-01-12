@@ -1,5 +1,4 @@
 public class DLL {
-
     private Node head;
 
     public void insertFirst(int val) {
