@@ -1,4 +1,5 @@
 package Binary_Tree;
+
 public class Prac {
     // Node class representing each node in the binary tree
     static class Node {
@@ -52,6 +53,22 @@ public class Prac {
                 inorderRec(root.right);
             }
         }
+
+        // Method to display the binary tree structure
+        void display() {
+            displayRec(root, 0);
+        }
+
+        // Recursive method to display the binary tree structure
+        void displayRec(Node root, int level) {
+            if (root == null) {
+                return;
+            }
+
+            displayRec(root.right, level + 1);
+            System.out.println(" ".repeat(level * 4) + root.data);
+            displayRec(root.left, level + 1);
+        }
     }
 
     // Main method to test the binary tree implementation
@@ -67,6 +84,11 @@ public class Prac {
         tree.insert(80);
 
         // Print inorder traversal of the binary tree
+        System.out.println("Inorder Traversal:");
         tree.inorder();
+
+        // Display the binary tree structure
+        System.out.println("\n\nBinary Tree Structure:");
+        tree.display();
     }
 }
