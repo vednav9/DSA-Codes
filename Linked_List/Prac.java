@@ -6,7 +6,7 @@ class Prac {
     private Node tail;
     private int size;
 
-    public LL() {
+    public Prac() {
         this.size = 0;
     }
 
