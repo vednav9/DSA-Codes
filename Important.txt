@@ -1,0 +1,7 @@
+binary_findPivot | dulicates
+binary_2Darray2 | sorted matrix
+rightmostSet | Math
+FindUniques | Math
+hcf | Math
+gcd_lcm | Math
+LargestRectangleinHistogram_84 | Stack_Queue
