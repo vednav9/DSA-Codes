@@ -28,7 +28,7 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 
 ## 🛠️ Tech Stack
 
-- Language: **C++ / Java / Python** *(depending on your implementation preference)*
+- Language: **Java**
 - IDE: Any (VS Code, IntelliJ, Code::Blocks, etc.)
 
 ## 🚀 Getting Started
