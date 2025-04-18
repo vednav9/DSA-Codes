@@ -31,7 +31,7 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 - Language: **Java**
 - IDE: Any (VS Code, IntelliJ, Code::Blocks, etc.)
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repository:
    ```bash
