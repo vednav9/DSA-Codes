@@ -17,7 +17,7 @@ public class Prac {
 
         System.out.println("Vedant" + new ArrayList<>());
 
-        System.out.println(new Integer(56) +""+ new ArrayList<>());
+        // System.out.println(new Integer(56) +""+ new ArrayList<>());
 
         System.out.println("a"+'a');
 
