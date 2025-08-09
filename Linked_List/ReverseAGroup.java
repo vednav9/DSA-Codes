@@ -1,7 +1,7 @@
 //Google
 
-public class ReverseGroup {
-    private ListNode head;
+public class ReverseAGroup {
+    // private ListNode head;
 
     public class ListNode {
         int val;

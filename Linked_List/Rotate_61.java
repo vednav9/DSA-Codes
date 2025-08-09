@@ -1,7 +1,7 @@
 // FaceBook, Twitter, Google
 
 public class Rotate_61 {
-    private ListNode head;
+    // private ListNode head;
 
     public class ListNode {
         int val;

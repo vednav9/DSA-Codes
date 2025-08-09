@@ -1,7 +1,7 @@
 // Google, Facebook
 
-public class LL_143 {
-    private ListNode head;
+public class Fast_Slow_143 {
+    // private ListNode head;
 
     public class ListNode {
         int val;

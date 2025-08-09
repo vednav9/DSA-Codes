@@ -167,7 +167,7 @@ class Prac {
 
 
     public static void main(String[] args) {
-        Prac list = new Prac();
+        Prac2 list = new Prac2();
         // list.addFirst(3);
         // list.addFirst(2);
         // list.addFirst(1);

@@ -4,11 +4,17 @@ import java.util.Arrays;
 
 public class binary_2Darray {
     public static void main(String[] args) {
-        int[][] matrix = { { 10, 20, 30, 40 },
-                            { 15, 25, 35, 45 },
-                            { 28, 29, 37, 49 },
-                            { 33, 34, 38, 50 } };
-        int target = 37;
+        // int[][] matrix = { { 10, 20, 30, 40 },
+        //                     { 15, 25, 35, 45 },
+        //                     { 28, 29, 37, 49 },
+        //                     { 33, 34, 38, 50 } };
+        
+        int[][] matrix = { { 1, 2, 3, 4 },
+                            { 5, 6, 7, 8 },
+                            { 9, 10, 11, 12 },
+                            { 13, 14, 15, 16 } };
+        
+        int target = 2;
         int[] num = search2D(matrix, target);
         System.out.println(Arrays.toString(num));
     }

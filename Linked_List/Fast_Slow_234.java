@@ -1,7 +1,7 @@
 // Google, Microsoft, Amazon, Linkedin, Apple
 
-public class LL_234 {
-    private ListNode head;
+public class Fast_Slow_234 {
+    // private ListNode head;
     public class ListNode {
         int val;
         ListNode next;
