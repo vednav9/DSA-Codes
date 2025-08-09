@@ -22,7 +22,8 @@ class binary_33 {
                 }
             }
             else{   // {10,12,2,4,5,7,8,9}
-                if(arr[mid]<target&&target<=arr[end]){
+            
+                if(target<=arr[end]&&arr[mid]<target){
                     start=mid+1;
                 }
                 else{

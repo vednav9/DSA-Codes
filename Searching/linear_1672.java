@@ -7,26 +7,26 @@ public class linear_1672 {
 
     static int maximumWealth(int[][] accounts) {
         int ans = 0;
-        // for(int p=0;p<accounts.length;p++){
-        // int sum=0;
-        // for(int a=0;a<accounts[p].length;a++){
-        // sum+=accounts[p][a];
-        // }
-        // if(sum>ans){
-        // ans=sum;
-        // }
-        // }
-
-        for (int[] p : accounts) {
+        for (int p = 0; p <accounts.length-1; p++) {
             int sum = 0;
-            for (int a : p) {
-                sum += a;
+            for (int a = 0; a < accounts[p].length-1; a++) {
+                sum += accounts[p][a];
             }
             if (sum > ans) {
                 ans = sum;
             }
-
         }
+
+        // for (int[] p : accounts) {
+        //     int sum = 0;
+        //     for (int a : p) {
+        //         sum += a;
+        //     }
+        //     if (sum > ans) {
+        //         ans = sum;
+        //     }
+
+        // }
 
         return ans;
     }
