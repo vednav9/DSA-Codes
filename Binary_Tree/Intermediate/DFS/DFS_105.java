@@ -42,7 +42,7 @@ public class DFS_105 {
 
         TreeNode node=new TreeNode(r);
 
-        node.left=buildTree(Arrays.copyOfRange(preorder,1, index+1), Arrays.copyOfRange(preorder,0, index));
+        node.left=buildTree(Arrays.copyOfRange(preorder,1, index), Arrays.copyOfRange(preorder,0, index));
         node.right=buildTree(Arrays.copyOfRange(preorder,index+1, preorder.length), Arrays.copyOfRange(preorder,index+1, inorder.length));
 
         return node;

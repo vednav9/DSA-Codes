@@ -24,14 +24,14 @@ public class ConstrusTree105 {
         }
     }
 
-    // public TreeNode buildTree(int[] preorder, int[] inorder) {
-    //     Deque<Integer> preorderQueue = new ArrayDeque<>();
-    //     for (int val : preorder) {
-    //         preorderQueue.offer(val);
-    //     }
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        Deque<Integer> preorderQueue = new ArrayDeque<>();
+        for (int val : preorder) {
+            preorderQueue.offer(val);
+        }
 
-    //     return build(preorderQueue, inorder);        
-    // }
+        return build(preorderQueue, inorder);        
+    }
 
     private TreeNode build(Deque<Integer> preorder, int[] inorder) {
         if (inorder.length > 0) {

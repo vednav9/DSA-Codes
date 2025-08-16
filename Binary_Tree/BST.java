@@ -101,10 +101,24 @@ public class BST {
         display(node.right, "Right child of " + node.value + " : ");
     }
 
+    void displayRec() {
+            displayRec(root, 0);
+        }
+
+    void displayRec(Node root, int level) {
+            if (root == null) {
+                return;
+            }
+
+            displayRec(root.right, level + 1);
+            System.out.println(" ".repeat(level * 4) + root.value);
+            displayRec(root.left, level + 1);
+        }
+
     public static void main(String[] args) {
         BST tree = new BST();
         int[] nums = { 5, 2, 7, 1, 4, 6, 9, 8, 3, 10 };
-        tree.populate(nums);
-        tree.display();
+        tree.populatedSorted(nums);
+        tree.displayRec();
     }
 }

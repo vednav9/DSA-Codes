@@ -37,9 +37,10 @@ public class DFS_543 {
         int leftHeight = height(node.left);
         int rightHeight = height(node.right);
 
-        int dia = leftHeight = rightHeight + 1;
+        int dia = leftHeight + rightHeight + 1;
         diameter = Math.max(diameter, dia);
 
         return Math.max(leftHeight, rightHeight) + 1;
+
     }
 }
