@@ -3,22 +3,23 @@ import java.util.*;
 public class TwoStack {
 
     static int twoStacks(int x, int[] a, int[] b) {
-        return twoStacks(x, a, b, 0, 0) - 1;
+        return twoStacks(x, a, b, 0, 0, 0);
     }
 
-    private static int twoStacks(int x, int[] a, int[] b, int sum, int count) {
-        if (sum > x) {
-            return count;
-        }
+    private static int twoStacks(int x, int[] a, int[] b, int sum, int i, int j) {
+        if (sum > x) return 0;
 
-        if (a.length == 0 || b.length == 0) {
-            return count;
-        }
+        int count = i + j;
 
-        int ans1 = twoStacks(x, Arrays.copyOfRange(a, 1, a.length), b, sum + a[0], count + 1);
-        int ans2 = twoStacks(x, a, Arrays.copyOfRange(b, 1, b.length), sum + a[0], count + 1);
+        int max = count;
 
-        return Math.max(ans1, ans2);
+        if (i < a.length)
+            max = Math.max(max, twoStacks(x, a, b, sum + a[i], i + 1, j));
+
+        if (j < b.length)
+            max = Math.max(max, twoStacks(x, a, b, sum + b[j], i, j + 1));
+
+        return max;
     }
 
     public static void main(String[] args) {
