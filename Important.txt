@@ -4,4 +4,8 @@ rightmostSet | Math
 FindUniques | Math
 hcf | Math
 gcd_lcm | Math
+TwoStack | Stack_Queue
 LargestRectangleinHistogram_84 | Stack_Queue
+Segment_Tree | Tree - Basics
+DFS_297
+HashMap
