@@ -1,3 +1,10 @@
+/*
+ * Construct Graph
+ * BFS
+ * DFS
+ * All Path from source to desctination
+ */
+
 package Graph;
 
 import java.util.*;
@@ -71,6 +78,22 @@ public class Graph {
         }
     }
 
+    public static void findAllPath(ArrayList<Edge>[] graph, boolean[] vis, int curr, String path, int target){
+        if(curr==target){
+            System.out.println(path);
+            return;
+        }
+
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e=graph[curr].get(i);
+            if (!vis[e.dest]) {
+                vis[curr]=true;
+                findAllPath(graph, vis, e.dest, path+e.dest, target);
+                vis[curr]=false;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
@@ -101,6 +124,10 @@ public class Graph {
                 dfs(graph, 0, visited);
             }
         }
+
+        // Find All Path
+
+        findAllPath(graph, new boolean[V], 0, "0", 5);
 
     }
 }
