@@ -12,7 +12,6 @@ public class Practice2 {
         int i=0;
         s=s.strip();
         int j=s.length()-1;
-
         while (i<j) {
             if (s.charAt(i)==s.charAt(j)) {
                 i++;
