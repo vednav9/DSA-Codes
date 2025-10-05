@@ -1,4 +1,4 @@
-public class Fibonacci_Series {
+public class FibonacciSeries {
     public static void main(String[] args) {
         int n=8;
         for(int i=0; i<=n-1;i++)
