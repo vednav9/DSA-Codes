@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BFS {
+public class DFS {
     static class Edge {
         int src;
         int dest;
@@ -35,49 +35,29 @@ public class BFS {
         graph[5].add(new Edge(6, 5, 1));
     }
 
-    public static void bfs(ArrayList<Edge> graph[], int V) {
-        boolean[] visited = new boolean[V];
-        Queue<Integer> q = new LinkedList<>();
-        q.add(0);
-
-        while (!q.isEmpty()) {
-            int curr = q.remove();
-            if (!visited[curr]) {
-                System.out.println(curr + "");
-                visited[curr] = true;
-
-                for (int i = 0; i < graph[curr].size(); i++) {
-                    Edge e = graph[curr].get(i);
-                    q.add(e.dest);
-                }
-            }
+    public static void dfs(ArrayList<Edge> graph[], int curr, boolean visited[]) {
+        if (visited[curr]) {
+            return;
         }
-    }
-
-    public static void bfs(Map<Integer, List<Integer>> graph, int start) {
-        Set<Integer> visited = new HashSet<>();
-        Queue<Integer> queue = new LinkedList<>();
-
-        visited.add(start);
-        queue.add(start);
-
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            System.out.print(node + " ");
-
-            for (int neighbor : graph.getOrDefault(node, new ArrayList<>())) {
-                if (!visited.contains(neighbor)) {
-                    visited.add(neighbor);
-                    queue.add(neighbor);
-                }
-            }
+        System.out.print(curr + " ");
+        visited[curr] = true;
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            dfs(graph, e.dest, visited);
         }
     }
 
     public static void main(String args[]) {
+        /*
+         * 1 --- 3
+         * / | \
+         * 0 | 5 -- 6
+         * \ | /
+         * 2 ---- 4
+         */
         int V = 7;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
-        bfs(graph, V);
+        dfs(graph, 0, new boolean[V]);
     }
 }
