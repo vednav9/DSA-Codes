@@ -1,6 +1,6 @@
 //Google
 
-public class ReverseAGroup {
+public class ReverseAlternateGroup {
     // private ListNode head;
 
     public class ListNode {
