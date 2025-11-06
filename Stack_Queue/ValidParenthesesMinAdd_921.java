@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class ValidParenthesesMinAdd {
+public class ValidParenthesesMinAdd_921 {
     public int minAddToMakeValid(String s) {
       Stack<Character> stack = new Stack<>();
       for (char ch : s.toCharArray()) {

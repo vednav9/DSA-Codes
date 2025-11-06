@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-class Solution {
+class ValidParentheses_20 {
   public boolean isValid(String s) {
     Stack<Character> stack = new Stack<>();
 
