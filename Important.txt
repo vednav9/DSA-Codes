@@ -2,10 +2,12 @@ binary_findPivot | dulicates
 binary_2Darray2 | sorted matrix
 rightmostSet | Math
 FindUniques | Math
+Occur3times | Math
 hcf | Math
 gcd_lcm | Math
 TwoStack | Stack_Queue
 LargestRectangleinHistogram_84 | Stack_Queue
 Segment_Tree | Tree - Basics
-DFS_297
+BFS_993 | Tree
+DFS_297 | Tree
 HashMap

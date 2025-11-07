@@ -1,32 +1,41 @@
-// import java.util.*;
+import java.util.*;
 
 public class Practice2 {
-    // Reverse a string without using built-in functions.
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-    public static void main(String[] args) {
-        System.out.println(16&1);
-        
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 
-    public static boolean isPalindrome(String s) {
-        int i=0;
-        s=s.strip();
-        int j=s.length()-1;
-        while (i<j) {
-            if (s.charAt(i)==s.charAt(j)) {
-                i++;
-                j--;
-            }
-            else if ((s.charAt(i)==':') || (s.charAt(i)==',')) {
-                i++;
-            }
-            else if ((s.charAt(j)==':') || (s.charAt(j)==',')) {
-                j--;
-            }
-            else{
-                return false;
-            }
+    int sum;
+
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if(root==null){
+            return false;
         }
-        return true;
+        sum+=root.val;
+        if(sum==targetSum){
+            return true;
+        }
+        boolean left=hasPathSum(root.left, targetSum);
+        if(sum>targetSum){
+            sum-=root.val;
+        }
+        boolean right=hasPathSum(root.right, targetSum);
+
+        return left||right;
     }
 }

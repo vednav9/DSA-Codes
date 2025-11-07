@@ -1,133 +1,113 @@
-/*
- * Construct Graph
- * BFS
- * DFS
- * All Path from source to desctination
- */
-
-package Graph;
-
 import java.util.*;
 
 public class Graph {
     static class Edge {
         int src;
         int dest;
-
         public Edge(int s, int d) {
             this.src = s;
             this.dest = d;
         }
     }
 
-    public static void createGraph(ArrayList<Edge> graph[]) {
+    // Create graph
+    public static void createGraph(ArrayList<Edge>[] graph) {
         for (int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<Edge>();
+            graph[i] = new ArrayList<>();
         }
+
+        graph[0].add(new Edge(0, 1));
         graph[0].add(new Edge(0, 2));
-        graph[0].add(new Edge(1, 2));
-        graph[0].add(new Edge(1, 3));
-        graph[0].add(new Edge(2, 0));
-        graph[0].add(new Edge(2, 1));
-        graph[0].add(new Edge(2, 3));
+        graph[1].add(new Edge(1, 0));
+        graph[1].add(new Edge(1, 3));
+        graph[2].add(new Edge(2, 0));
+        graph[2].add(new Edge(2, 3));
+        graph[3].add(new Edge(3, 1));
+        graph[3].add(new Edge(3, 2));
     }
 
-    public static void bfs(ArrayList<Edge> graph[], int V){
-        Queue<Integer> queue=new LinkedList<>();
-        boolean vis[]=new boolean[V];
-        queue.add(0);
+    // BFS (single component)
+    public static void bfs(ArrayList<Edge>[] graph, int start, boolean[] vis) {
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(start);
+        vis[start] = true;
 
-        while (queue!=null) {
-            int curr=queue.remove();
-            if (vis[curr]==false) {
-                System.out.println(curr+" ");
-                vis[curr]=true;
+        while (!queue.isEmpty()) {
+            int curr = queue.remove();
+            System.out.print(curr + " ");
 
-                for (int i = 0; i < graph[curr].size(); i++) {
-                    Edge e=graph[curr].get(i);
+            for (Edge e : graph[curr]) {
+                if (!vis[e.dest]) {
+                    vis[e.dest] = true;
                     queue.add(e.dest);
                 }
             }
         }
     }
 
-    public static void bfsDisjoint(ArrayList<Edge> graph[], int V, boolean[] vis, int start){
-        Queue<Integer> queue=new LinkedList<>();
-        queue.add(0);
-
-        while (queue!=null) {
-            int curr=queue.remove();
-            if (vis[curr]==false) {
-                System.out.println(curr+" ");
-                vis[curr]=true;
-
-                for (int i = 0; i < graph[curr].size(); i++) {
-                    Edge e=graph[curr].get(i);
-                    queue.add(e.dest);
-                }
-            }
+    // BFS for disconnected graph
+    public static void bfsDisjoint(ArrayList<Edge>[] graph, int V) {
+        boolean[] vis = new boolean[V];
+        for (int i = 0; i < V; i++) {
+            if (!vis[i]) bfs(graph, i, vis);
         }
     }
 
-    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] vis){
-        System.out.println(curr+" ");
-        vis[curr]=true;
-        for (int i = 0; i < graph[curr].size(); i++) {
-            Edge e=graph[curr].get(i);
-            dfs(graph, e.dest, vis);
+    // DFS (recursive)
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] vis) {
+        System.out.print(curr + " ");
+        vis[curr] = true;
+
+        for (Edge e : graph[curr]) {
+            if (!vis[e.dest]) dfs(graph, e.dest, vis);
         }
     }
 
-    public static void findAllPath(ArrayList<Edge>[] graph, boolean[] vis, int curr, String path, int target){
-        if(curr==target){
+    // DFS for disconnected graph
+    public static void dfsDisjoint(ArrayList<Edge>[] graph, int V) {
+        boolean[] vis = new boolean[V];
+        for (int i = 0; i < V; i++) {
+            if (!vis[i]) dfs(graph, i, vis);
+        }
+    }
+
+    // Find all paths from source to destination
+    public static void findAllPaths(ArrayList<Edge>[] graph, boolean[] vis, int curr, String path, int target) {
+        if (curr == target) {
             System.out.println(path);
             return;
         }
 
-        for (int i = 0; i < graph[curr].size(); i++) {
-            Edge e=graph[curr].get(i);
+        vis[curr] = true;
+        for (Edge e : graph[curr]) {
             if (!vis[e.dest]) {
-                vis[curr]=true;
-                findAllPath(graph, vis, e.dest, path+e.dest, target);
-                vis[curr]=false;
+                findAllPaths(graph, vis, e.dest, path + " -> " + e.dest, target);
             }
         }
+        vis[curr] = false; // backtrack
     }
 
     public static void main(String[] args) {
         int V = 4;
-        ArrayList<Edge> graph[] = new ArrayList[V];
+        ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
 
-        // Print
-        for (int i = 0; i < graph[2].size(); i++) {
-            Edge e = graph[2].get(i);
-            System.out.println(e.dest + "");
-        }
-        createGraph(graph);
-
-        bfs(graph, V);
-
-        // For disjoint
-
-        boolean[] vis=new boolean[V];
-        for (int i = 0; i < vis.length; i++) {
-            if (vis[i]==false) {
-                bfsDisjoint(graph, V, vis, i);                
+        System.out.println("Adjacency List:");
+        for (int i = 0; i < V; i++) {
+            System.out.print(i + " -> ");
+            for (Edge e : graph[i]) {
+                System.out.print(e.dest + " ");
             }
-        }
-        
-        boolean[] visited=new boolean[V];
-        // Disjoint for loop
-        for (int i = 0; i < visited.length; i++) {
-            if (visited[i]==false) {
-                dfs(graph, 0, visited);
-            }
+            System.out.println();
         }
 
-        // Find All Path
+        System.out.println("\nBFS traversal:");
+        bfsDisjoint(graph, V);
 
-        findAllPath(graph, new boolean[V], 0, "0", 5);
+        System.out.println("\n\nDFS traversal:");
+        dfsDisjoint(graph, V);
 
+        System.out.println("\n\nAll paths from 0 to 3:");
+        findAllPaths(graph, new boolean[V], 0, "0", 3);
     }
 }

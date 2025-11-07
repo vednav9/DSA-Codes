@@ -50,8 +50,8 @@ public class FindPath {
 
     // Find sum of path to form sum=4;
 
-    int countPaths(TreeNode, int sum){
-        List<Integer> path=new LinkedList<>();
-        return
-    }
+    // int countPaths(TreeNode node, int sum){
+    //     List<Integer> path=new LinkedList<>();
+    //     return
+    // }
 }

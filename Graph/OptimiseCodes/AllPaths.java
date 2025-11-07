@@ -43,4 +43,14 @@ class AllPaths {
         // backtrack (remove current node)
         path.remove(path.size() - 1);
     }
+
+    public static List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        List<List<Integer>> ans=new ArrayList<>();
+        return helper(graph, 0, ans);
+    }
+
+    public static List<List<Integer>> helper(int[][] graph, int src, List<List<Integer>> ans){
+        
+        return ans;
+    }
 }
