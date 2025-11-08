@@ -29,7 +29,7 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 ## 🛠️ Tech Stack
 
 - Language: Java
-- IDE: Any (VS Code, IntelliJ, Code::Blocks, etc.)
+- IDE: Any (VS Code, IntelliJ, CodeBlocks, etc.)
 
 ## Getting Started
 
