@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class BellmanFord {
     static class Edge {
         int src;

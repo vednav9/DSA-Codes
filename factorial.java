@@ -7,6 +7,7 @@ public class Factorial {
             System.out.println("Factorial of " + i + " is: " + fact);
         }
     }
+    
     static long fact(int n){
         long fact=1;
         if (n<=1) {

@@ -1,6 +1,6 @@
 package Binary_Tree.Intermediate.DFS;
 
-import java.util.LinkedList;
+import java.util.*;
 
 public class FindPath {
     public class TreeNode {

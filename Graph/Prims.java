@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Prims {
     static class Edge {
         int src;

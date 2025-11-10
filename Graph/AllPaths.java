@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class AllPaths {
     static class Edge {
         int src;

@@ -6,6 +6,7 @@ public class FibonacciSeries {
 
         fseries(8, 0, 1);
     }
+    
     static int f(int n){
         if(n<=1){
             return n;

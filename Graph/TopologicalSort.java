@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class TopologicalSort {
     static class Edge {
         int src;

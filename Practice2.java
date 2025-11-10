@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Practice2 {
     public class TreeNode {
         int val;
