@@ -16,6 +16,7 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 - Binary Search Trees (BST)
 - Graphs (BFS, DFS, etc.)
 - Hashing
+- HashMaps
 - Sorting Algorithms
 - Searching Algorithms
 - Recursion & Backtracking
@@ -29,7 +30,6 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 ## 🛠️ Tech Stack
 
 - Language: Java
-- IDE: Any (VS Code, IntelliJ, CodeBlocks, etc.)
 
 ## Getting Started
 
