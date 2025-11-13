@@ -47,5 +47,4 @@ class SqrtDecomposition {
         blocks[block_id] += (val - arr[i]);
         arr[i] = val;
     }
-
 }
