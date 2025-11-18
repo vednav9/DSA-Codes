@@ -1,5 +1,4 @@
 package HashMap.Huffman;
-
 import java.util.*;
 
 class HuffmanCoder {
