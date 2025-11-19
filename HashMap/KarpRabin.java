@@ -27,6 +27,7 @@ public class KarpRabin {
         int patternLength = pattern.length();
         double patternHash = calculateHash(pattern);
         double textHash = calculateHash(text.substring(0, patternLength));
+        
         for (int i = 0; i <= text.length() - patternLength; i++) {
             if (textHash == patternHash) {
                 if (text.substring(i, i + patternLength).equals(pattern)) {
