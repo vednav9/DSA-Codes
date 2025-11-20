@@ -94,6 +94,5 @@ class MostAsked {
 
     // Subarray sum equal to K
     static void subArray(int k){
-        
     }
 }
