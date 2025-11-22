@@ -15,7 +15,6 @@ class MostAsked {
 
         System.out.println(intersection(arr1, arr2));
 
-
         HashMap<String, String> tickets=new HashMap<>();
         tickets.put("Chennai", "Bengaluru");
         tickets.put("Mumbai", "Delhi");
