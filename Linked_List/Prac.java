@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.*;
 
 class Prac {
     
@@ -163,8 +163,6 @@ class Prac {
         tail = node;
         tail.next = null;
     }
-
-
 
     public static void main(String[] args) {
         Prac list = new Prac();
