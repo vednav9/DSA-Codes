@@ -2,7 +2,6 @@ class SqrtDecomposition {
     public static void main(String[] args) {
         int[] arr = { 1, 3, 5, 2, 7, 6, 3, 1, 4, 8 };
         int n = arr.length;
-        // build a blocks array
         int sqrt = (int) Math.sqrt(n);
         int block_id = -1;
         int[] blocks = new int[sqrt + 1];
