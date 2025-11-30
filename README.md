@@ -27,6 +27,16 @@ Each folder in the repository is named after a specific DSA topic. Inside each f
 - Two Pointer Technique
 - ...and many others!
 
+## Patterns Included
+- Sliding Window
+- Two Pointer Technique
+- Fast & Slow Pointers
+- Prefix Sum Technique
+- Binary Search on Answer
+- Kadane’s Algorithm Pattern
+- Recursion & Backtracking Patterns
+- Dynamic Programming Patterns (Tabulation, Memoization)
+
 ## 🛠️ Tech Stack
 
 - Language: Java
