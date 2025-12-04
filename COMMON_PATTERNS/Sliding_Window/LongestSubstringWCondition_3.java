@@ -1,6 +1,6 @@
 package COMMON_PATTERNS.Sliding_Window;
 
-public class LongestSubstringWCondition {
+public class LongestSubstringWCondition_3 {
     int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int left = 0, maxLen = 0;
