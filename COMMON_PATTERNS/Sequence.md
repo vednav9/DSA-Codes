@@ -32,3 +32,20 @@
 - In-place operations
 
 - Pair sum problems
+
+## LC -
+- Two Sum (sorted)
+- 3Sum (LC 15)
+- Valid Palindrome
+- Remove Duplicates from Sorted Array (LC 26)
+
+# 3. Fast & Slow Pointer Pattern
+- Floyd cycle detection
+
+- Find cycle start
+
+- Middle of linked list
+
+- Palindrome linked list
+
+- Happy number
