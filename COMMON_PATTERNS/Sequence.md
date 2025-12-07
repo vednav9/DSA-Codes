@@ -39,6 +39,7 @@
 - Valid Palindrome
 - Remove Duplicates from Sorted Array (LC 26)
 
+
 # 3. Fast & Slow Pointer Pattern
 - Floyd cycle detection
 
@@ -49,3 +50,40 @@
 - Palindrome linked list
 
 - Happy number
+
+## LC -
+- Detect Cycle in Linked List (LC 141)
+- Happy Number (LC 202)
+- Middle of Linked List (LC 876)
+
+
+# 4. Linked List In-Place Reversal Pattern
+
+- Reverse entire list
+
+- Reverse sublist
+
+- Reverse k-group
+
+- Reorder list
+
+## LC -
+- Reverse Linked List (LC 206)
+- Reverse Nodes in k-Group (LC 25)
+- Remove Nth Node From End (LC 19)
+
+
+# 5. Merge Intervals Pattern
+
+- Merge overlapping intervals
+
+- Insert interval
+
+- Erase interval
+
+- Sweep line technique (meeting rooms)
+
+## LC -
+- Merge Intervals (LC 56)
+- Insert Interval (LC 57)
+- Meeting Rooms II (LC 253)
