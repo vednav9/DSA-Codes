@@ -1,3 +1,4 @@
+// 560. Subarray Sum Equals K
 package COMMON_PATTERNS.PrefixSum;
 
 import java.util.HashMap;
