@@ -100,8 +100,27 @@
 
 - Difference array (range update)
 
-
-# Key Problems
+## Key Problems
 - Subarray Sum Equals K (LC 560)
 - Product of Array Except Self (LC 238)
 - Range Sum Query
+
+
+# 7. Binary Search Pattern
+## Subpatterns
+- First/last occurrence
+
+- Binary Search on Answer
+
+- Search rotated array
+
+- Peak element
+
+- K-th smallest pair distance
+
+- Minimize maximum (painters, books)
+
+## Key Problems
+- Kth Largest (Quickselect + BS)
+- Find Peak Element (LC 162)
+- Search in Rotated Sorted Array (LC 33)
