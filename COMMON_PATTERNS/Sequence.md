@@ -107,7 +107,7 @@
 
 
 # 7. Binary Search Pattern
-## Subpatterns
+
 - First/last occurrence
 
 - Binary Search on Answer
@@ -124,3 +124,17 @@
 - Kth Largest (Quickselect + BS)
 - Find Peak Element (LC 162)
 - Search in Rotated Sorted Array (LC 33)
+
+# 9. DFS Pattern
+
+- DFS for trees
+
+- DFS for graphs
+
+- Connected components
+
+- Cycle detection (directed/undirected)
+
+- Tree DFS (postorder DP)
+
+- Word search
