@@ -1,39 +1,20 @@
 public class Practice2 {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+    public int lengthOfLongestSubstring(String s) {
+        int maxLen=Integer.MIN_VALUE;
+        int left=0;
+        int[] freq=new int[256];
 
-        TreeNode() {
+        for(int right=0;right<s.length();right++){
+            char ch=s.charAt(right);
+            freq[ch]++;
+            while (freq[ch]>1) {
+                char leftchar=s.charAt(left);
+                freq[leftchar]--;
+                left++;
+            }
+            maxLen=Math.max(maxLen,right-left+1);
         }
 
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-    int sum;
-
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        if(root==null){
-            return false;
-        }
-        sum+=root.val;
-        if(sum==targetSum){
-            return true;
-        }
-        boolean left=hasPathSum(root.left, targetSum);
-        if(sum>targetSum){
-            sum-=root.val;
-        }
-        boolean right=hasPathSum(root.right, targetSum);
-
-        return left||right;
+        return maxLen;
     }
 }

@@ -1,17 +1,3 @@
-/*
-Sliding Window – Core Idea
-
-You have an array/string and you’re interested in continuous segments (subarrays / substrings).
-
-Instead of:
-    brute force = check all subarrays → O(n²)
-You:
-    maintain a “window” [left…right]
-    expand right to include more
-    move left to remove from the front
-    keep updating your answer on the fly → O(n)
-*/
-
 package COMMON_PATTERNS.Sliding_Window;
 
 public class FixedSize {
