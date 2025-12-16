@@ -23,3 +23,10 @@ while (curr != null) {
 }
 return prev; // new head
 ```
+
+| Subpattern          | Key Technique              |
+| ------------------- | -------------------------- |
+| Reverse entire list | `prev, curr, next`         |
+| Reverse sublist     | dummy + head insertion     |
+| Reverse k-group     | count + recursive reversal |
+| Reorder list        | middle + reverse + merge   |
