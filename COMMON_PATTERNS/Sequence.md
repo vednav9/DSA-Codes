@@ -128,6 +128,17 @@
 - Find Peak Element (LC 162)
 - Search in Rotated Sorted Array (LC 33)
 
+# 8. Modified Binary Search Pattern
+
+- Rotated arrays
+
+- Nearly sorted arrays
+
+- Bitonic arrays
+
+- First/last index
+
+
 # 9. DFS Pattern
 
 - DFS for trees
@@ -141,3 +152,57 @@
 - Tree DFS (postorder DP)
 
 - Word search
+
+## Key Problems
+
+- Number of Islands (LC 200)
+- Clone Graph (LC 133)
+- Word Search (LC 79)
+
+# 10. BFS Pattern
+
+- Level order traversal
+
+- Shortest path in unweighted graph
+
+- Multi-source BFS
+
+- Bidirectional BFS
+
+- Grid BFS
+
+## Key Problems
+
+- Word Ladder (LC 127)
+- Rotting Oranges (LC 994)
+- Course Schedule 1 (LC 207)
+
+# 11. Backtracking Pattern
+
+- Subsets
+
+- Permutations
+
+- Combination sums
+
+- N-Queens
+
+- Sudoku
+
+- Path search
+
+## Key Problems
+
+- Subsets (LC 78)
+- Permutations (LC 46)
+- N-Queens (LC 51)
+
+# 12. Dynamic Programming Pattern
+
+## A. 1D DP
+
+- Fibonacci
+
+- House Robber
+
+- Min Jumps / Climb stairs
