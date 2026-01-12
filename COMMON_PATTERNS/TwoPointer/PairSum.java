@@ -23,4 +23,15 @@ public class PairSum {
 
         return count;
     }
+
+    public static void main(String[] args) {
+        PairSum ps = new PairSum();
+
+        int[] nums = {1, 5, 7, -1, 5};
+        int target = 6;
+
+        int result = ps.countPairs(nums, target);
+
+        System.out.println("Number of pairs with sum " + target + " = " + result);
+    }
 }
