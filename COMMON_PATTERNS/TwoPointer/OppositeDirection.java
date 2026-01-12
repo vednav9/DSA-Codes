@@ -1,4 +1,3 @@
-
 package COMMON_PATTERNS.TwoPointer;
 
 public class OppositeDirection {
