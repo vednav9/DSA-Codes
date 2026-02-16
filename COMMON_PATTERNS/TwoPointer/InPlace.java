@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.TwoPointer;
+package TwoPointer;
 
 // Partitioning (like Quicksort)
 // Removing elements (filtering)

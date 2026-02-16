@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.TwoPointer;
+package TwoPointer;
 
 public class SameDirection {
     public class ListNode {

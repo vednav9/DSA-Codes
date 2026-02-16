@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.TwoPointer;
+package TwoPointer;
 
 public class OppositeDirection {
     // Used when:
