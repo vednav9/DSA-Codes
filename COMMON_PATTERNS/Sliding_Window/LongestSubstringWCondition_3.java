@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Sliding_Window;
+package Sliding_Window;
 
 public class LongestSubstringWCondition_3 {
     int lengthOfLongestSubstring(String s) {

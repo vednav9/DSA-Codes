@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Sliding_Window;
+package Sliding_Window;
 
 public class FixedSize {
     int maxSumSubarrayOfSizeK(int[] arr, int k) {

@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Sliding_Window;
+package Sliding_Window;
 
 import java.util.Deque;
 import java.util.LinkedList;

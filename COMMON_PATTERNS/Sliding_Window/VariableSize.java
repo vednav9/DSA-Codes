@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Sliding_Window;
+package Sliding_Window;
 
 public class VariableSize {
     int slidingWindowGeneric(int[] arr) {

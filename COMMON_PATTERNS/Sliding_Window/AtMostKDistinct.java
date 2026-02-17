@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Sliding_Window;
+package Sliding_Window;
 
 public class AtMostKDistinct {
     // Longest substring with at most K distinct characters
