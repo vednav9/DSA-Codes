@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.PrefixSum;
+package PrefixSum;
 
 public class ParityPrefix {
     public int countEvenSumSubarrays(int[] nums) {

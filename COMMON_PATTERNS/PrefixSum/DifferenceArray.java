@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.PrefixSum;
+package PrefixSum;
 
 public class DifferenceArray {
     public int[] corpFlightBookings(int[][] bookings, int n) {
