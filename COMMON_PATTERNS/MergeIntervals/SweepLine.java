@@ -1,9 +1,23 @@
 // Meeting Rooms II (Minimum Rooms)
 
-package COMMON_PATTERNS.MergeIntervals;
+package MergeIntervals;
 import java.util.Arrays;
 
 public class SweepLine {
+
+    public static void main(String[] args) {
+        SweepLine solution = new SweepLine();
+
+        int[][] intervals = {
+            {0, 30},
+            {5, 10},
+            {15, 20}
+        };
+
+        int result = solution.minMeetingRooms(intervals);
+        System.out.println("Minimum number of meeting rooms: " + result);
+    }
+
     public int minMeetingRooms(int[][] intervals) {
         int n = intervals.length;
         int[] start = new int[n];

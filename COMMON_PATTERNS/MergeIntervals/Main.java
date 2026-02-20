@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.MergeIntervals;
+package MergeIntervals;
 
 import java.util.*;
 
