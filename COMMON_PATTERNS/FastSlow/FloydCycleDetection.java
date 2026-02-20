@@ -1,6 +1,6 @@
 // Linked List Cycle
 
-package COMMON_PATTERNS.FastSlow;
+package FastSlow;
 
 public class FloydCycleDetection {
     public class ListNode {

@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.FastSlow;
+package FastSlow;
 
 public class MiddleofLinkedList {
     public class ListNode {

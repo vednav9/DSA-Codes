@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.FastSlow;
+package FastSlow;
 
 public class HappyNumber {
     public boolean isHappy(int n) {
