@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.LLinPlaceReversal;
+package LLinPlaceReversal;
 
 public class ReverseList {
     public class ListNode {
