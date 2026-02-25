@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.QuickSelect;
+package QuickSelect;
 
 public class LomutoPartitionCode {
     private int partition(int[] nums, int left, int right) {
@@ -13,5 +13,10 @@ public class LomutoPartitionCode {
         }
         swap(nums, i, right);
         return i;
+    }
+    private void swap(int[] arr, int i, int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
     }
 }
