@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.DFS;
+package DFS;
 
 public class WordSearch {
     public boolean exist(char[][] board, String word) {

@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.DFS;
+package DFS;
 
 public class Diameter {
     public class TreeNode {

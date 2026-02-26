@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.DFS;
+package DFS;
 
 public class Main {
     // void dfs(int node) {
