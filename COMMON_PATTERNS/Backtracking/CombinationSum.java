@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.Backtracking;
+package Backtracking;
 import java.util.*;
 
 public class CombinationSum {
