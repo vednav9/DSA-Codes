@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.BFS;
+package BFS;
 
 import java.util.LinkedList;
 import java.util.List;
