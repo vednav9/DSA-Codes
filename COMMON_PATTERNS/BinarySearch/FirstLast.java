@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.BinarySearch;
+package BinarySearch;
 
 public class FirstLast {
     public int[] searchRange(int[] nums, int target) {
