@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.BinarySearch;
+package BinarySearch;
 
 public class RotatedSortedArray {
     int search(int[] nums, int target) {
