@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.BinarySearch;
+package BinarySearch;
 
 public class Main {
     int binarySearch(int[] arr, int target) {
