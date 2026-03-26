@@ -1,4 +1,4 @@
-package COMMON_PATTERNS.BinarySearch;
+package BinarySearch;
 
 public class PeakElement {
     public int findPeakElement(int[] nums) {
