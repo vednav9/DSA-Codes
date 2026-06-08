@@ -12,7 +12,7 @@ public class SubsetSum {
             for (int s = 1; s <= target; s++) {
                 if (nums[i - 1] <= s) {
                     dp[i][s] = dp[i - 1][s] ||
-                            dp[i - 1][s - nums[i - 1]];
+                               dp[i - 1][s - nums[i - 1]];
                 } else {
                     dp[i][s] = dp[i - 1][s];
                 }

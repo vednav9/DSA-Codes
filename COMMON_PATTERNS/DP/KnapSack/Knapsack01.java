@@ -14,4 +14,16 @@ class Knapsack01 {
         }
         return dp[n][W];
     }
+    
+    public static void main(String[] args) {
+
+        int[] wt = {1, 3, 4, 5};
+        int[] val = {1, 4, 5, 7};
+        int W = 7;
+        int n = wt.length;
+
+        int result = knapSack(W, wt, val, n);
+
+        System.out.println("Maximum value in Knapsack = " + result);
+    }
 }
