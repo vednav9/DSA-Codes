@@ -18,15 +18,15 @@ public class MergeKSortedList {
     }
     
     public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        PriorityQueue<ListNode> pq =
+            new PriorityQueue<>((a, b) -> a.val - b.val);
 
         for (ListNode node : lists) {
-            if (node != null)
-                pq.offer(node);
+            if (node != null) pq.offer(node);
         }
 
-        ListNode dummy = new ListNode(0);
-        ListNode curr = dummy;
+        ListNode temp = new ListNode(0);
+        ListNode curr = temp;
 
         while (!pq.isEmpty()) {
             ListNode node = pq.poll();
@@ -37,6 +37,6 @@ public class MergeKSortedList {
                 pq.offer(node.next);
             }
         }
-        return dummy.next;
+        return temp.next;
     }
 }
