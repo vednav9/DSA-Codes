@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Stack;
 
 public class NextGreaterElements {
-    public int[] nextGreaterElements(int[] nums) {
+    public static int[] nextGreaterElements(int[] nums) {
         int n = nums.length;
         int[] res = new int[n];
         Arrays.fill(res, -1);
@@ -18,5 +18,9 @@ public class NextGreaterElements {
             st.push(i);
         }
         return res;
+    }
+    public static void main(String[] args) {
+        int[] arr={2,1,2,4,3};
+        System.out.println(Arrays.toString(nextGreaterElements(arr)));
     }
 }
