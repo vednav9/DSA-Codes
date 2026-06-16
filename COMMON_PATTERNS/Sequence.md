@@ -206,3 +206,266 @@
 - House Robber
 
 - Min Jumps / Climb stairs
+
+## B. DP on Strings (Subsequence DP)
+
+- LCS
+
+- Edit Distance
+
+- Longest Palindromic Subsequence
+
+- Distinct Subsequences
+
+- Wildcard Matching
+
+- Regex Matching
+
+- Shortest Common Supersequence
+
+- Delete Operation Two Strings
+
+- Minimum Insertions/Deletions
+
+## C. Knapsack / Subset DP
+
+- 0/1 knapsack
+
+- Unbounded knapsack
+
+- Subset sum / partition
+
+## D. DP on Grids
+
+- Unique paths
+
+- Min path sum
+
+- Cherry Pickup
+
+- Gold Mine
+
+## E. DP on Trees
+
+- include/exclude
+
+- diameter DP
+
+- subtree DP
+
+## F. Bitmask DP
+
+- TSP
+
+- state compression
+
+## Key Problems
+
+- LIS (DP on subsequence on array)
+- LCS (DP on subsequence on strings)
+- Edit Distance
+- Coin Change
+
+# 13. Monotonic Stack Pattern
+
+- Next greater element
+
+- Next smaller element
+
+- Largest rectangle
+
+- Daily temperatures
+
+## Key Problems
+
+- Largest Rectangle in Histogram (LC 84)
+- Daily Temperatures (LC 739)
+
+# 14. Heap / Priority Queue Pattern
+
+- Top K
+
+- Kth smallest/largest
+
+- Merge K lists
+
+- Running median
+
+- Frequency sorting
+
+## Key Problems
+
+- Merge K Sorted Lists (LC 23)
+- Top K Frequent Elements (LC 347)
+- Median Data Stream (LC 295)
+
+## Includes:
+- 2 Heaps Pattern (median)
+
+# 15. Quickselect Pattern
+
+- Kth largest element
+
+- Partitioning technique
+
+- Used in quicksort
+
+## Key Problem
+
+- Kth Largest Element in Array (LC 215)
+
+# 16. Two Heaps Pattern
+
+- Maintain two heaps (max + min)
+
+- Median of a stream
+
+# 17. Overlapping Intervals Pattern
+
+- Sorting + merging
+
+- Meeting rooms
+
+- Arrows to burst balloons
+
+# 18. Topological Sort Pattern
+Used for DAGs, prerequisite problems.
+
+- Kahn’s algorithm (BFS)
+
+- DFS-based topo sort
+
+- Cycle detection in directed graph
+
+## Key Problems
+
+- Course Schedule (LC 207)
+- Alien Dictionary
+
+# 19. Greedy Pattern
+
+- Activity selection
+
+- Interval scheduling
+
+- Fractional knapsack
+
+- Huffman coding
+
+- Jump game
+
+## Key Problems
+
+- Gas Station (LC 134)
+- Jump Game (LC 55)
+- Minimum Arrows (LC 452)
+
+# 20. Bit Manipulation Pattern
+
+- XOR tricks
+
+- Count bits
+
+- Power of two
+
+- Set/reset bit
+
+- Bit masks
+
+
+## Algorithms
+
+- Bitwise Trie
+- Subset using bitmask
+
+# 21.  Matrix Traversal Pattern
+
+- Spiral order
+
+- Rotate matrix
+
+- DFS/BFS on matrix
+
+- Connected components
+
+- Island problems
+
+# 22. Graph Algorithm Pattern
+
+## Core Algorithms
+
+- Dijkstra
+
+- Bellman-Ford
+
+- Floyd-Warshall
+
+- Kruskal's MST
+
+- Prim’s MST
+
+- Union Find
+
+
+# 23. String Algorithm Pattern
+
+- KMP
+
+- Rabin-Karp
+
+- Z-algorithm
+
+- Boyer-Moore
+
+- Longest Palindromic Substring
+
+- Trie-based searching
+
+# 24. Tree Algorithm Pattern
+
+## 1. Basic Tree Logic
+- BST operations
+- Path Sum
+- Diameter
+
+## 2. Advanced Tree Queries
+- LCA (Lowest Common Ancestor)
+
+## 3. Range Query Trees
+- Segment Tree
+- Fenwick Tree (BIT)
+
+## 4. Balanced Trees
+- AVL Tree
+
+# 25. Backtracking Special Problems
+
+- N-Queens
+
+- Subset sum
+
+- Word search
+
+- Palindrome partition
+
+# 26. Math/Number Theory Patterns
+
+## Algorithms
+
+- Sieve of Eratosthenes
+
+- Euclidean GCD
+
+- Fast exponentiation
+
+- Combinatorics
+
+- Modular arithmetic
+
+
+
+
+dry run in tht best possible way of each line also with data flow with example ata same time you teach me like explain line + sample output of that line.
+
+
+you are best dsa expert master now teach me this and explain me in such i way i understand and clear the concept in detail, explain me each step, then give me code
